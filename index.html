@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>                                  
+        <meta charset="utf-8">              
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title> 
+        <link rel="stylesheet" href="style.css">   
+        <script src="scrip.js"></script>
+    </head>
+<body>
+    <header>                
+       
+        <img src="img/alura.png" alt="logo alura">
+    </header>
+
+    <main>                  
+        
+        <section class="intext">
+            <!--agregar area de texto-->
+            <textarea class="textoingresado" id="textoingresado" cols="70" rows="10" type="text" placeholder="Escribe el texto que deseas encriptar o desencriptar"></textarea>
+            <!-- ingresar parafo de advertencia-->
+            <p>⚠ Sólo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <!--crear los botones con llamado al scrip-->
+                <button type="button" id="botonencriptar" onclick="encriptar()"> ENCRIPTAR</button>
+                <button type="button" id="botondesencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+        
+        <section class="outtext">
+            
+            <textarea class="textoegresado" id="textoegresado" cols="40" rows="10" type="text" ></textarea>
+            <!--ingresar imagen del muñeco alura-->
+            <div class="textimg">
+                
+                <div class="textos" id="textos">
+                    <!--textos-->
+                    <p><strong>Ningun mensaje fue encontrado</strong></p>
+                    
+                </div>
+                <div class="botones">
+                    <!--crear los botones con llamado al scrip-->
+                    <button class="bcopia" type="button" id="copiartexto" onclick="copiar()">COPIAR</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>                
+        <p class="copyright"><strong> &copy  2023 - Proyecto desarrollado por Luis Francisco Aldana Perez</strong></p>
+    </footer>    
+</body>
+</html>
